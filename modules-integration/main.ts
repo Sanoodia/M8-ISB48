@@ -1,5 +1,6 @@
 // import {add, divide, minus, multiply, calculation} from './helperFunction.js';
 import { calculation} from './helperFunction.js';
+import chalk from 'chalk';
 import promptSync from 'prompt-sync';
 const prompt = promptSync();
 
@@ -27,7 +28,7 @@ let operator: any = prompt('type operator  ');
 
 let result  = calculation(num1, num2, operator)
 
-console.log(`Answer is: ${result}`);
+console.log(chalk.red(`Answer is: ${result}`));
 
 
 
