@@ -1,3 +1,5 @@
+import inquirer from 'inquirer';
+
 // add
 // export const add = (number1:number, number2: number): number => {
 //     let result = number1 + number2;
@@ -63,4 +65,22 @@ export const calculation = (num1:number, num2: number, operator:string): any =>{
    }
 
    return result
+}
+
+
+export const promptUserName = async() => {
+    const user = await inquirer.prompt([
+            {
+            type: 'string',
+            name: 'Question1',
+            message: '2+3:'
+            },
+            {
+                type: 'input',
+                name: 'lastName',
+                message: 'Write your lastName:'
+            }
+        ])
+    return user ;
+  
 }

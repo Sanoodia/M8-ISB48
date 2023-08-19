@@ -10,11 +10,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/inquirer": "^9.0.3",
     "@types/node": "^20.4.10",
     "@types/prompt-sync": "^4.2.0"
   },
   "dependencies": {
     "chalk": "^5.3.0",
+    "inquirer": "^9.2.10",
     "prompt-sync": "^4.2.0"
   }
 }
